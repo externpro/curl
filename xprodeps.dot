@@ -1,0 +1,13 @@
+digraph GG {
+  bgcolor="transparent";
+  graph [fontcolor="#64748b", color="#64748b"];
+  node  [fontcolor="#64748b", color="#64748b"];
+  edge  [fontcolor="#64748b", color="#64748b"];
+  node  [fontsize=10];
+  "curl" -> "c-ares";
+  "curl" -> "libssh2";
+  "libssh2" -> "openssl";
+  "libssh2" -> "zlib";
+  "openssl" -> "nasm" [style=dashed];
+  "openssl" -> "yasm" [style=dashed];
+}
